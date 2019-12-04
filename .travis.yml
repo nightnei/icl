@@ -2,4 +2,6 @@ language: node_js
 node_js:
   - 12.13.0
 before_script:
+  - npm run build
   - cd registry
+script: npm sdfsdf
