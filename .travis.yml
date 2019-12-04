@@ -4,4 +4,3 @@ node_js:
 before_script:
   - npm run build
   - cd registry
-script: npm sdfsdf
