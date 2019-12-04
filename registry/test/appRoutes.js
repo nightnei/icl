@@ -57,7 +57,7 @@ describe('Tests /api/v1/route', () => {
         it('should not create record without a required field: orderPos', async () => {
             const response = await request.post('/api/v1/route')
             .send(_.omit(examples.correct, 'orderPos'))
-            .expect(422, '"orderPos" is required');
+            .expect(420, '"orderPos" is required');
 
             expect(response.body).deep.equal({});
         });
